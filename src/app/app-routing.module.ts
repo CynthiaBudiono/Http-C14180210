@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'datauploud',
+    loadChildren: () => import('./datauploud/datauploud.module').then( m => m.DatauploudPageModule)
+  },
 ];
 
 @NgModule({
