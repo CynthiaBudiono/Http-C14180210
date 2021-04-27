@@ -5,20 +5,17 @@
 </ion-header>
 
 <ion-content>
-  <!-- <ion-button (click)="add()">SIMPAN DATA</ion-button> -->
-  <ion-button color="danger" (click)="delete()">DELETE DATA</ion-button>
-  <!-- <ion-button color="warning" (click)="edit()">EDIT DATA</ion-button> -->
   <ion-item> 
-    <ion-label>ID</ion-label>
-    <ion-input type="text" [(ngModel)]="post.userId"></ion-input> 
+    <ion-label>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="post.name"></ion-input> 
   </ion-item>
 
   <ion-item> 
-    <ion-label>Email</ion-label>
-    <ion-input type="text" [(ngModel)]="post.email"></ion-input>
+    <ion-label>Job</ion-label>
+    <ion-input type="text" [(ngModel)]="post.job"></ion-input>
   </ion-item>
 
-  <ion-item> 
+  <!-- <ion-item> 
     <ion-label>First name</ion-label> 
     <ion-input type="text" [(ngModel)]="post.first_name"></ion-input> 
   </ion-item>
@@ -31,8 +28,10 @@
   <ion-item> 
     <ion-label>Avatar</ion-label> 
     <ion-input type="text" [(ngModel)]="post.avatar"></ion-input> 
-  </ion-item>
+  </ion-item> -->
+  
   
   <ion-button (click)="submit()">SIMPAN DATA</ion-button>
+  <ion-button color="danger" (click)="delete()">DELETE DATA</ion-button>
   <ion-button color="warning" (click)="edit()">EDIT DATA</ion-button>
 </ion-content>
